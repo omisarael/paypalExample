@@ -1,0 +1,22 @@
+<p>
+  payme works!
+</p>
+
+<div *ngIf="!paidFor">
+
+  <h1>buy this car - $ {{product.price}} QBO</h1>
+
+  <p>{{product.description}}</p>
+
+  <img width="400" [src]="product.img">
+
+</div>
+
+
+<div *ngIf="paidFor">
+  <h1> Ya compraste el auto!!!!</h1>
+</div>
+
+
+
+<div #paypal></div>
